@@ -3,6 +3,19 @@
 #Classes are essentially a blueprint that is used to create multiple objects
 #based on the class's data and functionality
 
+#We are importing the Car class from the CarClass module
+from CarClass import Car
+
+my_car = Car("Toyota", "Prius", 2015, "teal")
+
+#This prints the attributes of the my_car object created from CarClass
+print(f"My car is a {my_car.color} {my_car.year} {my_car.make} {my_car.model}.")
+
+#These are methods contained with in the Car class
+#The paranthesies are required even though we do not have any attributes
+my_car.start_engine()
+my_car.accelerate()
+my_car.brake()
 
 #Classes have 3 important abilities:
 #Encapsulation
