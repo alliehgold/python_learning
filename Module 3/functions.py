@@ -22,4 +22,22 @@ print("Your final price is $", final_price(100, 8))
 # prioritize clerity over short names
 # For functions that return a boolean value, consider prefixes such as is_, has_, or can_ to signal their nature
 
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return float(fahrenheit)
+    
+def fahrenheit_to_celsius(fahrenheit):
+    celsius = (float(fahrenheit) - 32) * 5/9
+    return float(celsius)
+
+def convert_temperature(temperature, unit):
+    if unit == 'C':
+        return celsius_to_fahrenheit(temperature)
+    elif unit == 'F':
+        return fahrenheit_to_celsius(temperature)
+    
+temperature_c = 25
+converted_c = convert_temperature(25, 'C')
+
+print(f"{temperature_c} in celsius is {converted_c} in fahrenheit")
 
