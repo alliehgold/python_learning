@@ -1,6 +1,5 @@
-
-#classes contain their own functions, or methods, that can be called via an instance
-#You can explain a class using a docstring which can be used by typing '''
+# classes contain their own functions, or methods, that can be called via an instance
+# You can explain a class using a docstring which can be used by typing '''
 
 """
 The car class allows you to create a car object with info about what kind of car it is.
@@ -23,19 +22,19 @@ Example:
     >>> Car("Chevrolet", "Corvette", 2010, "Red")
 """
 
+
 class Car:
     # __init__ is a constructor. it is called when you create a new object of this class.
     # This function initializes the object's attributes and assigns them their default values
     def __init__(self, make: str, model: str, year: int, color: str):
-
-        #These assign the variables 
+        # These assign the variables
         self.make = make
         self.model = model
         self.year = year
         self.color = color
-        self.fuel_level = 100 #initial fuel level
-    
-    #Methods are functions that are defined within the class
+        self.fuel_level = 100  # initial fuel level
+
+    # Methods are functions that are defined within the class
 
     def start_engine(self):
         print(f"The {self.year} {self.make} {self.model}'s engine roars to life!")
