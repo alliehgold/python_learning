@@ -15,7 +15,7 @@ class Triangle:
 
 
 class Circle:
-    # initializing the Pircle class
+    # initializing the Circle class
     def __init__(self, radius):
         self.radius = radius
 
@@ -25,7 +25,7 @@ class Circle:
         return round(math.pi * math.pow(self.radius, 2), 2)
 
 
-# Calculates the area of a prism, borrowing from the Triangle class
+# Calculates the volume of a prism, borrowing from the Triangle class
 class Prism(Triangle):
     # initializing the Prism class
     def __init__(self, base, height, prism_length):
@@ -34,9 +34,9 @@ class Prism(Triangle):
         self.height = height
         self.prism_length = prism_length
 
-    # calculate the area of the prism
+    # calculate the volume of the prism
     def get_prism_volume(self):
-        # return the Prism area
+        # return the Prism volume
         return round(self.get_triangle_area() * self.prism_length, 2)
 
 
